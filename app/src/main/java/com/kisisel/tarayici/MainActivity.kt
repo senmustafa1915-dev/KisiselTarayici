@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
             KisiselTarayiciTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color(0xFF000000) // OLED Siyah
+                    color = Color(0xFF000000)
                 ) {
                     HomeScreen()
                 }
