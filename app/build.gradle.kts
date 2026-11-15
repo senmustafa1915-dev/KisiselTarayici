@@ -40,10 +40,10 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
     
-    // Compose BOM kaldırıldı, tüm sürümler tek tek ve uyumlu şekilde yazıldı:
-    implementation("androidx.compose.ui:ui:1.6.1")
-    implementation("androidx.compose.ui:ui-graphics:1.6.1")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.1")
-    implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.material:material-icons-extended:1.6.1")
+    // Tüm Compose sürümleri derleyici (1.5.8) ile uyumlu hale getirildi:
+    implementation("androidx.compose.ui:ui:1.5.8")
+    implementation("androidx.compose.ui:ui-graphics:1.5.8")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.8")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.compose.material:material-icons-extended:1.5.8")
 }
