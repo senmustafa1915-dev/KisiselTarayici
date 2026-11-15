@@ -37,7 +37,6 @@ fun HomeScreen() {
         ) {
             Spacer(modifier = Modifier.height(40.dp))
             
-            // Üst Başlık
             Text(
                 text = "N E X A",
                 color = Color.White,
@@ -53,7 +52,6 @@ fun HomeScreen() {
             
             Spacer(modifier = Modifier.height(32.dp))
 
-            // Arama Çubuğu
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -68,7 +66,6 @@ fun HomeScreen() {
 
             Spacer(modifier = Modifier.height(40.dp))
 
-            // Kısayollar
             Text("Shortcuts", color = TextGray, fontSize = 14.sp, modifier = Modifier.align(Alignment.Start))
             Spacer(modifier = Modifier.height(16.dp))
             Row(
@@ -82,7 +79,6 @@ fun HomeScreen() {
             }
         }
 
-        // Alttaki Menü Çubuğu (Bottom Bar)
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
@@ -100,7 +96,6 @@ fun HomeScreen() {
             Icon(Icons.Default.Menu, "Menü", tint = TextGray, modifier = Modifier.clickable { showBottomSheet = true })
         }
 
-        // Alttan Açılan Panel (Bottom Sheet)
         if (showBottomSheet) {
             ModalBottomSheet(
                 onDismissRequest = { showBottomSheet = false },
@@ -109,7 +104,6 @@ fun HomeScreen() {
                 dragHandle = { BottomSheetDefaults.DragHandle(color = TextGray) }
             ) {
                 Column(modifier = Modifier.padding(24.dp)) {
-                    // Reklam Engelleyici Sayaç Kartı
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -127,17 +121,15 @@ fun HomeScreen() {
 
                     Spacer(modifier = Modifier.height(24.dp))
 
-                    // Menü Butonları
                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceAround) {
                         MenuButton(Icons.Default.History, "History")
-                        MenuButton(Icons.Default.Bookmark, "Bookmarks")
+                        MenuButton(Icons.Default.Star, "Bookmarks") // Bookmark yerine Star kullandık, hata vermez
                         MenuButton(Icons.Default.Download, "Downloads")
                         MenuButton(Icons.Default.Settings, "Settings")
                     }
                     
                     Spacer(modifier = Modifier.height(32.dp))
 
-                    // Çıkış Butonu
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
