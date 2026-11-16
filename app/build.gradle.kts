@@ -35,15 +35,16 @@ android {
     }
 }
 
-// TÜM ESKİ SÜRÜMLERİ ZORLA EZİYORUZ:
+// 🚀 ÇÖZÜM BURADA: Tüm Compose kütüphanelerini ve alt parçalarını tek bir uyumlu sürüme kilitliyoruz!
 configurations.all {
     resolutionStrategy {
-        force("androidx.compose.material:material-ripple:1.5.8")
-        force("androidx.compose.material:material-icons-core:1.5.8")
-        force("androidx.compose.material:material-icons-extended:1.5.8")
         force("androidx.compose.ui:ui:1.5.8")
         force("androidx.compose.ui:ui-graphics:1.5.8")
         force("androidx.compose.ui:ui-tooling-preview:1.5.8")
+        force("androidx.compose.foundation:foundation:1.5.8")
+        force("androidx.compose.material:material-ripple:1.5.8")
+        force("androidx.compose.material:material-icons-core:1.5.8")
+        force("androidx.compose.material:material-icons-extended:1.5.8")
         force("androidx.compose.material3:material3:1.1.2")
     }
 }
@@ -56,6 +57,7 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.5.8")
     implementation("androidx.compose.ui:ui-graphics:1.5.8")
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.8")
+    implementation("androidx.compose.foundation:foundation:1.5.8")
     implementation("androidx.compose.material3:material3:1.1.2")
     implementation("androidx.compose.material:material-icons-extended:1.5.8")
 }
